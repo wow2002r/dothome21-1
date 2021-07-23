@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>레이아웃 연습6</title>
+    <title>레이아웃 연습7</title>
     <style>
         @font-face {
     font-family: 'twaysky';
@@ -13,15 +13,15 @@
     font-style: normal;
         }
         * {
+            font-family: 'twaysky';
             margin: 0;
             padding: 0;
+            font-size: 60px;
         }
         #wrap {
-            font-family: 'twaysky';
-            font-size: 60px;
-            color : #ffffff;
-            text-transform: uppercase;
+            color: #ffffff;
             text-align: center;
+            text-transform: uppercase;
         }
         #header {
             height: 110px;
@@ -53,6 +53,26 @@
             background-color: #2196f3;
             line-height: 270px;
         }
+        #title {
+            width: 1200px;
+            height: 200px;
+            background-color: #3e2723;
+            line-height: 200px;
+        }
+        #box1 {
+            width: 600px;
+            height: 300px;
+            background-color: #4e342e;
+            float: left;
+            line-height: 300px;
+        }
+        #box2 {
+            width: 600px;
+            height: 300px;
+            background-color: #5d4037;
+            float: left;
+            line-height: 300px;
+        }
         .container {
             width: 1200px;
             height: inherit;
@@ -73,10 +93,17 @@
         <!-- //banner -->
         <div id="contents">
             <div id="content1">
-                <div class="container">content1</div>
+                <div class="container">
+                    <div id="title">title</div>
+                    content1
+                </div>
             </div>
             <div id="content2">
-                <div class="container">content2</div>
+                <div class="container">
+                    <div id="box1">box1</div>
+                    <div id="box2">box2</div>
+                    content2
+                </div>
             </div>
             <div id="content3">
                 <div class="container">content3</div>
