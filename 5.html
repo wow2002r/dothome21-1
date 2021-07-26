@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>조건문</h2>
+    <p class="well">
+        <ul>
+            <li>if문</li>
+            <li>switch case문</li>
+        </ul>
+    </p>
+    <p class="well">
+        <ul>
+            <li>if 구문의 기본 문법을 알고 조건식을 구현할 수 있다.</li>
+            <li>switch case 구문의 기본 문법을 알고 조건식을 구현할 수 있다.</li>
+            <li>표준 입력함수를 알고 사용할 수 있다.</li>
+        </ul>
+    </p>
+    <h3>조건문</h3>
+    <h4>1. if</h4>
+    <h5>1)기본 문법 : 조건을 판단하여 참인 경우 문장 수행</h5>
+    <p>
+        if(조건식)<br>
+            문장;
+    </p>
+    <h4>2. if ~ else</h4>
+    <h5>1) 기본 문법</h5>
+    <p>
+        if(조건식)<br>
+            문장1;  -> 조건식이 참일 때 수행할 문장<br>
+        else<br>
+            문장2;  -> 조건식이 거짓일 때 수행할 문장
+    </p>
+    <h4>3. if ~ else if ~ else</h4>
+    <h5>1) 기본 문법</h5>
+    <p>
+        if(조건식1)<br>
+            문장1;<br>
+        else if(조건식2)<br>
+            문장2;<br>
+        else if(조건식3)<br>
+        문장3;<br>
+            ......<br>
+        else<br>
+            문장n;
+    </p>
+    <h4>4. 중첨if문</h4>
+    <h3>switch case문</h3>
+    <h4>1. switch문</h4>
+    <h5>1) 기본 문법</h5>
+    <p>
+        switch( 값 )<br>
+        {<br>
+            case 값1 : 문장1-1; 문장1-2; break;<br>
+            case 값2 : 문장2-1; 문장2-2; break;<br>
+            case 값3 : 문장3-1; 문장3-2; break;<br>
+            . . . <br>
+            default : 문장d1; 문장d2;<br>
+        }<br>
+    </p>
+    <h4>2. 입력문</h4>
+    <p>
+        1) scanf()를 이용한 입력<br>
+        2) 표준입력으로부터 다양한 자료를 지정한 변수에 저장<br>
+        3) 형식지정자(%d %c %f %lf) 사용<br>
+        4) 공백, enter 전까지를입력<br>
+        5) 형식 : scanf(“형식지정자”, &변수명)<br>
+    </p>
+   <p>
+    형식지정자 : %d -> 정수 입력<br>
+    형식지정자 : %f(float) %lf(double) -> 실수 입력<br>
+    형식지정자 : %c -> 문자 입력(단일문자)
+   </p>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>변수와 데이터형</h2>
+    <p class="well">
+        <ul>
+            <li>변수와 상수</li>
+            <li>데이터타입</li>
+        </ul>
+    </p>
+    <p class="well">
+        <ul>
+            <li>변수와 상수를 정의할 수 있다.</li>
+            <li>변수 선언 시 사용되는 다양한 데이터타입을 알고 사용할 수 있다.</li>
+            <li>형식지정자를 알고 변수값을 출력할 수 있다.</li>
+        </ul>
+    </p>
+    <h3>변수와 상수</h3>
+    <h4>1. 변수</h4>
+    <h5>1) 변수란?</h5>
+    <p>
+        변수 : 프로그램 수행 시 데이터를 보관할 수 있는 공간<br>
+        (1) 메모리에 저장공간 확보<br>
+        (2) 방법에 따라 크기와 용도가 다르게 생성<br>
+        (3) 유일한 이름(Identifier) 부여
+        (4) 메모리에 대한 심볼릭 표현
+    </p>
+    <h5>2) 변수선언</h5>
+    <p>
+        변수는 사용 전 반드시 먼저 선언해야 함<br>
+        필요 시 선언과 동시에 초기화도 가능함<br>
+        변수선언문 기본 형식 : 데이터타입 변수명; / 데이터타입 변수명1, 변수명2, ......;<br>
+        변수명은 식별자 생성 규칙을 적용함
+    </p>
+    <h5>3) 식별자</h5>
+    <p>
+        식별자(Identifier) : 변수를 구분하기 위해서 사용되는 이름<br>
+        식별자 규칙<br>
+        ㄱ. 식별자는 반드시 영문자, 숫자, 밑줄 기호(_)만을 사용해야 함<br>
+        ㄴ. 식별자의 첫 글자는 반드시 영문자 또는 밑줄 기호(_)로 시작해야 함(식별자는 숫자로 시작해서는 안됨)<br>
+        ㄷ. 식별자에는 밑줄 기호(_)를 제외한 다른 기호를 사용할 수 없음<br>
+        ㄹ. 식별자는 대소문자를 구분해서 만들어야 함<br>
+        ㅁ. C언어의 예약어는 식별자로 사용할 수 없음( if and printf switch case break continue int char float while for double return ...)<br>
+    </p>
+    <p>
+        변수 활용 : 초기화는 =(대입연산자)를 이용함<br>
+        변수명 = 값 ;
+    </p>
+    <h4>2. 상수(Consonant)</h4>
+    <h5>1) 상수란?</h5>
+    <p>
+        상수 : 변하지 않는 자료값. 보관되는 값에 따라 의미가 변하는 것이 상수<br>
+        리터럴 상수(Literal Consonant) : 정수형, 실수형, 문자형<br>
+        심볼릭 상수(Sumbolic Consonant) : const 상수, 매크로 상수, 열거형 상수
+    </p>
+    <h5>매크로 상수 : #define 문으로 정의 되는 상수</h5>
+    <p> 형식 : # define 매크로이름 상수</p>
+    <h3>데이터타입</h3>
+    <h4>1. 개요</h4>
+    <p>
+        C 프로그램에서 사용되는 모든 변수나 상수 값은 정해진 데이터형을 가짐<br>
+        데이터형에 의해서 주어진 값의 이진 표현이 결정됨
+    </p>
+    <p>
+        기본 데이터형(Primitive Data Ytpe) : 문자형(char), 정수형(short, int, long, long long), 실수형(float, double, long double)<br>
+        파생 데이터형(Derived Data Type) : 배열, 포인터
+        사용자 정의형(User-defined Data Type) : 구조체, 공용체, 열거체
+    </p>
+    <h4>2. 문자형</h4>
+    <p>
+        char : signed char 을 의미. 1byte.<br>
+        unsigned char : 부호 없는 문자형을 의미. 1byle.(br)
+    </p>
+    <p>
+        문자형 변수 선언<br>
+        char 변수명;<br>
+        char 변수명, 변수명, ... 변수명;<br>
+        char 변수명 = '초기값';
+    </p>
+    <h4>3. 정수형</h4>
+    <h5>1) 정수형의 개념 : C언어는 정수형으로 short, int, long을 제공함</h5>
+    <p>
+        크기 : short <= int <= long<br>
+        정수형 : signed형(생략 가능), unsigned형
+    </p>
+    <p>
+        short(signed short int),  unsigned short(unsigned short int) : 2byte<br>
+        int(signed int), unsigned int(unsigned int) : 4byte<br>
+        long(signed long int), unsigned long(unsigned long int) : 4byte<br>
+        long long(signed long long int), unsigned long long(unsinged long long int) : 8byte
+    </p>
+    <h5>2) 정수의 표현</h5>
+    <p>
+        (1) 부호가 있는 정수형은 최상의 비트(msb)를 부호 비트로 사용함<br>
+        (2) 부호가 있는 정수형은 음수를 펴현하는데 2의 보수를 사용함<br>
+        (3) 부호가 없는 정수형은 최상위 비트를 값을 저장하는 용도로 사용함
+    </p>
+    <h4>4. 실수형</h4>
+    <h5>1) 실수의 표현 방식 : 고정소수점(Fixed Point)방식, 부동소수점(Floating Point)방식</h5>
+    <h5>2) 실수의 저밀도 : 단정도(Float)형, 배정도(Double)형</h5>
+    <h4>5. 형식지정자</h4>
+    <h5>1) 형식지정자를 이용한 printf() 출력 : %c(문자), %d(정수값), %o(8진수) 등</h5>
+</body>
+</html>
