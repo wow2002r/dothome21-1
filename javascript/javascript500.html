@@ -221,6 +221,9 @@
         .ol5::before {
             content: "데이터 연습하기 : ";
         }
+        .ol6::before {
+            content : "데이터 메서드 : ";
+        }
     </style>
 </head>
 
@@ -239,7 +242,7 @@
         <li><a href="javascript500.html">객체</a></li>
     </ol>
     <ol class="ol3">
-        <li><a href="javascript300.html">함수</a></li>
+        <li><a href="javascript300.html">함수(function)</a></li>
     </ol>
     <ol class="ol4">
         <li><a href="javascript200.html">조건문</a></li>
@@ -247,6 +250,13 @@
     </ol>
     <ol class="ol5">
         <li><a href="javascript400.html">알고리즘</a></li>
+    </ol>
+    <ol class="ol6">
+        <li><a href="javascript601.html">배열 메서드</a></li>
+        <li><a href="javascript602.html">문자열 메서드</a></li>
+        <li><a href="javascript603.html">브라우저 메서드</a></li>
+        <li><a href="javascript604.html">날짜 메서드</a></li>
+        <li><a href="javascript605.html">이벤트 메서드</a></li>
     </ol>
 
     <h2 class="mt20">데이터 불러오기</h2>
@@ -278,7 +288,7 @@
     <hr>
 
     <!-- sample1 -->
-    <div id="sample1" class="sample1">
+    <div id="sample1" class="sample">
         <h2>01. 변수 : 데이터 불러오기<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -301,7 +311,7 @@
     <!-- sample1 -->
 
     <!-- sample2 -->
-    <div id="sample2" class="sample2">
+    <div id="sample2" class="sample">
         <h2>02. 상수 : 데이터 불러오기<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -320,7 +330,7 @@
     <!-- sample2 -->
 
     <!-- sample3 -->
-    <div id="sample3" class="sample3">
+    <div id="sample3" class="sample">
         <h2>03. 배열 : 데이터 불러오기<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -339,7 +349,7 @@
     <!-- sample3 -->
 
     <!-- sample4 -->
-    <div id="sample4" class="sample4">
+    <div id="sample4" class="sample">
         <h2>04. 배열 : 데이터 불러오기 : 2차 배열<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -359,7 +369,7 @@
     <!-- sample4 -->
 
     <!-- sample5 -->
-    <div id="sample5" class="sample5">
+    <div id="sample5" class="sample">
         <h2>05. 배열 : 데이터 불러오기 : 갯수 구하기<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -375,7 +385,7 @@
     <!-- sample5 -->
 
     <!-- sample6 -->
-    <div id="sample6" class="sample6">
+    <div id="sample6" class="sample">
         <h2>06. 배열 : 데이터 불러오기 : for문<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -394,7 +404,7 @@
     <!-- sample6 -->
 
     <!-- sample7 -->
-    <div id="sample7" class="sample6">
+    <div id="sample7" class="sample">
         <h2>07. 배열 : 데이터 불러오기 : forEach()<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -435,7 +445,7 @@
     <!-- sample7 -->
 
     <!-- sample8 -->
-    <div id="sample8" class="sample8">
+    <div id="sample8" class="sample">
         <h2>08. 배열 : 데이터 불러오기 : for of문<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -454,7 +464,7 @@
     <!-- sample8 -->
 
     <!-- sample9 -->
-    <div id="sample9" class="sample9">
+    <div id="sample9" class="sample">
         <h2>09. 배열 : 데이터 불러오기 : for in문 : 객체에서 사용(배열에서도 가능)<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -476,7 +486,7 @@
     <!-- sample9 -->
 
     <!-- sample10 -->
-    <div id="sample10" class="sample10">
+    <div id="sample10" class="sample">
         <h2>10. 배열 : 데이터 불러오기 : map()<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -501,7 +511,7 @@
     <!-- sample10 -->
 
     <!-- sample11 -->
-    <div id="sample11" class="sample11">
+    <div id="sample11" class="sample">
         <h2>11. 배열 : 데이터 불러오기 : 펼침 연산자<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -528,7 +538,7 @@
     <!-- sample11 -->
 
     <!-- sample12 -->
-    <div id="sample12" class="sample12">
+    <div id="sample12" class="sample">
         <h2>12. 객체 : 데이터 불러오기 : 기본<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -554,7 +564,7 @@
     <!-- sample12 -->
 
     <!-- sample13 -->
-    <div id="sample13" class="sample13">
+    <div id="sample13" class="sample">
         <h2>13. 객체 : 데이터 불러오기 : Object<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -581,7 +591,7 @@
     <!-- sample13 -->
     
     <!-- sample14 -->
-    <div id="sample14" class="sample14">
+    <div id="sample14" class="sample">
         <h2>14. 객체 : 데이터 불러오기 : 변수<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -607,7 +617,7 @@
     <!-- sample14 -->
 
     <!-- sample15 -->
-    <div id="sample15" class="sample15">
+    <div id="sample15" class="sample">
         <h2>15. 객체 : 데이터 불러오기 : for in문<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -630,7 +640,7 @@
     <!-- sample15 -->
 
     <!-- sample16 -->
-    <div id="sample16" class="sample16">
+    <div id="sample16" class="sample">
         <h2>16. 객체 : 데이터 불러오기 : map()<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -669,7 +679,7 @@
     <!-- sample16 -->
 
     <!-- sample17 -->
-    <div id="sample17" class="sample17">
+    <div id="sample17" class="sample">
         <h2>17. 객체 : 데이터 불러오기 : hasOwnProperty<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -697,7 +707,7 @@
     <!-- sample17 -->
 
     <!-- sample18 -->
-    <div id="sample18" class="sample18">
+    <div id="sample18" class="sample">
         <h2>18. 객체 : 데이터 불러오기 : 펼침연산자 - 복사<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -725,7 +735,7 @@
     <!-- sample18 -->
 
     <!-- sample19 -->
-    <div id="sample19" class="sample19">
+    <div id="sample19" class="sample">
         <h2>19. 객체 : 데이터 불러오기 : 펼침연산자 - 추가<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -754,7 +764,7 @@
     <!-- sample19 -->
 
     <!-- sample20 -->
-    <div id="sample20" class="sample20">
+    <div id="sample20" class="sample">
         <h2>20. 객체 : 데이터 불러오기 : 펼침연산자 - 결합<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -786,7 +796,7 @@
     <!-- sample20 -->
 
     <!-- sample21 -->
-    <div id="sample21" class="sample21">
+    <div id="sample21" class="sample">
         <h2>21. 객체 : 데이터 불러오기 : 비구조화 할당<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
@@ -811,7 +821,7 @@
     <!-- sample21 -->
 
     <!-- sample22 -->
-    <div id="sample22" class="sample22">
+    <div id="sample22" class="sample">
         <h2>22. 객체 : 데이터 불러오기 : 비구조화 할당 : 별도 이름 저장<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
