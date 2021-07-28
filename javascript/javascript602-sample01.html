@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 속성 검색하기</title>
+    <style>
+        @font-face {
+            font-family: 'GyeonggiBatang';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'TmonMonsori';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        #wrap {
+            width: 100%;
+            height: 100vh;
+            background-image: url(img/search_bg.jpg);
+            background-size: cover;
+            background-position: center bottom;
+        }
+
+        .girl {
+            width: 250px;
+            position: absolute;
+            bottom: -60px;
+            right: 20%;
+        }
+
+        .dog {
+            width: 150px;
+            position: absolute;
+            bottom: -40px;
+            left: 20%;
+        }
+
+        .board {
+            width: 60vw;
+            height: 500px;
+            background-color: #f1f3f6;
+            border: 2px solid #000;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            padding: 3%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .board h1 {
+            font-family: 'TmonMonsori';
+            color: #223547;
+            font-size: 60px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .board span {
+            font-family: 'GyeonggiBatang';
+            color: #223547;
+            font-size: 24px;
+        }
+
+        .board .search label {
+            background-color: #bfe6fe;
+            font-family: 'GyeonggiBatang';
+            font-size: 24px;
+            padding: 10px 30px;
+            border: 1px solid #000;
+            border-radius: 40px;
+        }
+
+        .board .search input {
+            font-family: 'GyeonggiBatang';
+            font-size: 24px;
+            border: 1px solid #000;
+            padding: 10px 10px 10px 30px;
+            border-radius: 40px;
+            outline: none;
+        }
+
+        .board .list {
+            text-align: left;
+            margin-top: 40px;
+        }
+
+        .board .list ul li {
+            font-family: 'GyeonggiBatang';
+            line-height: 1.6;
+            list-style: none;
+            background-color: #bdd6e6;
+            margin: 5px;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 800px) {
+            .dog img {
+                left: 5%
+            }
+
+            .girl img {
+                right: 5%;
+            }
+
+            .board {
+                width: 80vw;
+                padding: 5%;
+            }
+
+            .board h1 {
+                font-size: 30px;
+                margin-top: 5px;
+            }
+
+            .board span {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="board">
+            <span>나에게 필요한!</span>
+            <h1>CSS 속성 검색하기</h1>
+            <div class="search">
+                <label for="search-box">검색하기</label>
+                <input id="search-box" type="text">
+            </div>
+            <div class="list">
+                <ul>
+                    <li>align-content 속성은 콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.</li>
+                    <li>align-items 속성은 콘텐츠 아이템의 내부 상하관계 정렬 상태를 설정합니다.</li>
+                    <li>align-self 속성은 개별적인 콘텐츠 아이템의 정렬 상태를 설정합니다.</li>
+                    <li>all 속성은 요소의 속성을 초기화 또는 상속을 설정합니다.</li>
+                    <li>animation 속성은 애니메이션과 관련된 속성을 일괄적으로 설정합니다.</li>
+                    <li>animation-delay 속성은 애니메이션 지연 시간을 설정합니다.</li>
+                    <li>animation-direction 속성은 애니메이션 움직임 방향을 설정합니다.</li>
+                    <li>animation-duration 속성은 애니메이션 움직임 시간을 설정합니다.</li>
+                    <li>animation-fill-mode 속성은 애니메이션이 끝난 후의 상태를 설정합니다.</li>
+                    <li>animation-iteration-count 속성은 애니메이션 반복 횟수 설정합니다.</li>
+                    <li>animation-name 속성은 애니메이션 keyframe 이름을 설정합니다.</li>
+                    <li>animation-play-state 속성은 애니메이션 진행상태를 설정합니다.</li>
+                    <li>animation-timing-function 속성은 애니메이션 움직임의 속도를 설정합니다.</li>
+                    <li>backface-visibility 속성은 요소의 뒷면을 설정합니다.</li>
+                    <li>background 속성은 백그라운드 속성을 일괄적으로 설정합니다.</li>
+                    <li>background-attachment 속성은 배경 이미지의 고정 여부를 설정합니다.</li>
+                    <li>background-blend-mode 속성은 배경을 혼합했을 때의 상태를 설정합니다.</li>
+                    <li>background-clip 속성은 백그라운드 이미지의 위치 기준점을 설정하기 위한 속성입니다.</li>
+                    <li>background-color 속성은 백그라운드 색을 설정합니다.</li>
+                    <li>background-image 속성은 백그라운드 이미지 및 배경 속성을 설정합니다.</li>
+                    <li>background-origin 속성은 백그라운드 이미지의 위치 기준점을 설정하기 위한 속성입니다.</li>
+                    <li>background-position 속성은 백그라운드 이미지의 위치 영역을 설정합니다.</li>
+                    <li>background-repeat 속성은 백그라운드 이미지 반복 여부를 설정합니다.</li>
+                    <li>background-size 속성은 백그라운드 이미지 사이즈를 설정합니다.</li>
+                    <li>border 속성은 테두리 속성을 일괄적으로 설정합니다.</li>
+                    <li>border-bottom 속성은 테두리 아래쪽 속성을 일괄적으로 설정합니다.</li>
+                    <li>border-bottom-color 속성은 테두리 아래쪽 색 속성을 설정합니다.</li>
+                    <li>border-bottom-left-radius 속성은 아래부분 왼쪽 모서리 굴곡을 설정합니다.</li>
+                    <li>border-bottom-rogjt-radius 속성은 아래부분 오른쪽 모서리 굴곡을 설정합니다.</li>
+                    <li>border-bottom-style 속성은 테두리 아래쪽 스타일 속성을 설정합니다.</li>
+                    <li>border-bottom-width 속성은 테두리 아래쪽 두께 속성을 설정합니다.</li>
+                    <li>border-collapse 속성은 테이블의 테두리 분리 여부를 설정합니다.</li>
+                    <li>border-color 속성은 테두리 색 속성을 설정합니다.</li>
+                    <li>border-image 속성은 테두리 이미지 속성을 설정합니다.</li>
+                    <li>border-image-outset 속성은 테두리 이미지 간격 속성을 설정합니다.</li>
+                    <li>border-image-repeat 속성은 테두리 이미지 반복 속성을 설정합니다.</li>
+                    <li>border-image-slice 속성은 테두리 이미지 크기 속성을 설정합니다.</li>
+                    <li>border-image-source 속성은 테두리 이미지 경로 속성을 설정합니다.</li>
+                    <li>border-image-width 속성은 테두리 이미지 두께 속성을 설정합니다.</li>
+                    <li>border-left 속성은 테두리 왼쪽 속성을 일괄적으로 설정합니다.</li>
+                    <li>border-left-color 속성은 테두리 왼쪽 색 속성을 설정합니다.</li>
+                    <li>border-left-style 속성은 테두리 왼쪽 스타일 속성을 설정합니다.</li>
+                    <li>border-left-width 속성은 테두리 왼쪽 두께 속성을 설정합니다.</li>
+                    <li>border-radius 속성은 모서리 굴곡을 설정합니다.</li>
+                    <li>border-right 속성은 테두리 오른쪽 속성을 일괄적으로 설정합니다.</li>
+                    <li>border-right-color 속성은 테두리 오른쪽 색 속성을 설정합니다.</li>
+                    <li>border-right-style 속성은 테두리 오른쪽 스타일 속성을 설정합니다.</li>
+                    <li>border-right-width 속성은 테두리 오른쪽 두께 속성을 설정합니다.</li>
+                    <li>border-spacing 속성은 테이블의 테두리 간격을 설정합니다.</li>
+                    <li>border-style 속성은 테두리 스타일 속성을 설정합니다.</li>
+                    <li>border-top 속성은 테두리 위쪽 속성을 일괄적으로 설정합니다.</li>
+                    <li>border-top-color 속성은 테두리 위쪽 색 속성을 설정합니다.</li>
+                    <li>border-top-left-radius 속성은 윗부분 왼쪽 모서리 굴곡을 설정합니다.</li>
+                    <li>border-top-right-radius 속성은 윗부분 오른쪽 모서리 굴곡을 설정합니다.</li>
+                    <li>border-top-style 속성은 테두리 위쪽 스타일 속성을 설정합니다.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="girl">
+            <img src="img/search_girl.png" alt="">
+        </div>
+        <div class="dog">
+            <img src="img/search_dog.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
