@@ -203,7 +203,7 @@
         ol li.active a {
             color: #fff;
         }
-        .mt20{
+        .mt20 {
             margin-top: 20px;
         }
         .ol1::before {
@@ -213,7 +213,7 @@
             content: "데이터 불러오기 : ";
         }
         .ol3::before {
-            content: "데이터 실행오기 : ";
+            content: "데이터 실행하기 : ";
         }
         .ol4::before {
             content: "데이터 제어하기 : ";
@@ -222,7 +222,7 @@
             content: "데이터 연습하기 : ";
         }
         .ol6::before {
-            content : "데이터 메서드 : ";
+            content: "데이터 메서드 : ";
         }
     </style>
 </head>
@@ -230,61 +230,280 @@
 <body>
     <h1>Javascript 문법 정리</h1>
     <ol class="ol1">
-        <li><a href="javascript100.html">변수</a></li>
-        <li><a href="javascript100.html">상수</a></li>
-        <li><a href="javascript100.html">배열(Array)</a></li>
-        <li><a href="javascript100.html">객체(Object)</a></li>
+        <li><a href="Javascript100.html">변수</a></li>
+        <li><a href="Javascript100.html">상수</a></li>
+        <li><a href="Javascript100.html">배열(Array)</a></li>
+        <li><a href="Javascript100.html">객체(Object)</a></li>
     </ol>
     <ol class="ol2">
-        <li><a href="javascript500.html">변수</a></li>
-        <li><a href="javascript500.html">상수</a></li>
-        <li><a href="javascript500.html">배열</a></li>
-        <li><a href="javascript500.html">객체</a></li>
+        <li><a href="Javascript500.html">변수</a></li>
+        <li><a href="Javascript500.html">상수</a></li>
+        <li><a href="Javascript500.html">배열</a></li>
+        <li><a href="Javascript500.html">객체</a></li>
     </ol>
     <ol class="ol3">
-        <li><a href="javascript300.html">함수(function)</a></li>
+        <li><a href="Javascript300.html">함수(function)</a></li>
     </ol>
     <ol class="ol4">
-        <li><a href="javascript200.html">조건문</a></li>
-        <li><a href="javascript200.html">반복문</a></li>
+        <li><a href="Javascript200.html">조건문</a></li>
+        <li><a href="Javascript200.html">반복문</a></li>
     </ol>
     <ol class="ol5">
-        <li><a href="javascript400.html">알고리즘</a></li>
+        <li><a href="Javascript400.html">알고리즘</a></li>
     </ol>
     <ol class="ol6">
-        <li><a href="javascript601.html">배열 메서드</a></li>
-        <li><a href="javascript602.html">문자열 메서드</a></li>
-        <li><a href="javascript603.html">브라우저 메서드</a></li>
-        <li><a href="javascript604.html">날짜 메서드</a></li>
-        <li><a href="javascript605.html">이벤트 메서드</a></li>
+        <li><a href="Javascript601.html">배열 메서드</a></li>
+        <li><a href="Javascript602.html">문자열 메서드</a></li>
+        <li><a href="Javascript603.html">브라우저 메서드</a></li>
+        <li><a href="Javascript604.html">날짜 메서드</a></li>
+        <li><a href="Javascript605.html">이벤트 메서드</a></li>
     </ol>
 
     <h2 class="mt20">배열 메서드</h2>
     <ul>
-       <li><a href="#sample1">01. </a></li>
+        <li><a href="#sample1">01. 변수 : 데이터 불러오기 : 기본</a></li>
+        <li><a href="#sample2">02. 상수 : 데이터 불러오기 : 기본</a></li>
+        <li><a href="#sample3">03. 배열 : 데이터 불러오기 : 기본</a></li>
+        <li><a href="#sample4">04. 배열 : 데이터 불러오기 : 2차 배열</a></li>
+        <li><a href="#sample5">05. 배열 : 데이터 불러오기 : 갯수 구하기</a></li>
+        <li><a href="#sample6">06. 배열 : 데이터 불러오기 : for문</a></li>
+        <li><a href="#sample7">07. 배열 : 데이터 불러오기 : forEach()</a></li>
+        <li><a href="#sample8">08. 배열 : 데이터 불러오기 : for of문</a></li>
+        <li><a href="#sample9">09. 배열 : 데이터 불러오기 : for in문</a></li>
+        <li><a href="#sample10">10. 배열 : 데이터 불러오기 : map()</a></li>
+        <li><a href="#sample11">11. 배열 : 데이터 불러오기 : 펼침 연산자</a></li>
+        <li><a href="#sample12">12. 객체 : 데이터 불러오기 : 기본</a></li>
+        <li><a href="#sample13">13. 객체 : 데이터 불러오기 : Object</a></li>
+        <li><a href="#sample14">14. 객체 : 데이터 불러오기 : 변수</a></li>
+        <li><a href="#sample15">15. 객체 : 데이터 불러오기 : for in문</a></li>
+        <li><a href="#sample16">16. 객체 : 데이터 불러오기 : map()</a></li>
+        <li><a href="#sample17">17. 객체 : 데이터 불러오기 : hasOwnProperty()</a></li>
+        <li><a href="#sample18">18. 객체 : 데이터 불러오기 : 펼침 연산자 - 복사</a></li>
+        <li><a href="#sample19">19. 객체 : 데이터 불러오기 : 펼침 연산자 - 추가</a></li>
+        <li><a href="#sample20">20. 객체 : 데이터 불러오기 : 펼침 연산자 - 결합</a></li>
+        <li><a href="#sample21">21. 객체 : 데이터 불러오기 : 비구조화 할당</a></li>
+        <li><a href="#sample22">22. 객체 : 데이터 불러오기 : 비구조화 할당 : 별도 이름 저장</a></li>
+        <li><a href="#sample70">70. 배열 : 데이터 합 구하기</a></li>
     </ul>
 
     <hr>
 
-    <!-- sample1 -->
     <div id="sample1" class="sample">
-        <h2>배열 메서드<span class="dot"></span></h2>
+        <h2>01. 변수 : 데이터 불러오기 : 기본<span class="dot"></span></h2>
         <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
-
-}
+<pre class="line-numbers"><code class="language-js">
 </code></pre>
         </div>
     </div>
     <hr>
-    <!-- sample1 -->
 
+    <div id="sample2" class="sample">
+        <h2>02. 상수 : 데이터 불러오기 : 기본<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample3" class="sample">
+        <h2>03. 배열 : 데이터 불러오기 : 기본<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample4" class="sample">
+        <h2>04. 배열 : 데이터 불러오기 : 2차 배열<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample5" class="sample">
+        <h2>05. 배열 : 데이터 불러오기 : 갯수 구하기<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample6" class="sample">
+        <h2>06. 배열 : 데이터 불러오기 : for문<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample7" class="sample">
+        <h2>07. 배열 : 데이터 불러오기 : forEach<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample8" class="sample">
+        <h2>08. 배열 : 데이터 불러오기 : for of문<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample9" class="sample">
+        <h2>09. 배열 : 데이터 불러오기 : for in문<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample10" class="sample">
+        <h2>10. 배열 : 데이터 불러오기 : map()<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample11" class="sample">
+        <h2>11. 배열 : 데이터 불러오기 : 펼침 연산자<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample12" class="sample">
+        <h2>12. 객체 : 데이터 불러오기 : 기본<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample13" class="sample">
+        <h2>13. 객체 : 데이터 불러오기 : Object<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample14" class="sample">
+        <h2>14. 객체 : 데이터 불러오기 : 변수<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample15" class="sample">
+        <h2>15. 객체 : 데이터 불러오기 : for in문<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample16" class="sample">
+        <h2>16. 객체 : 데이터 불러오기 : map()<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample17" class="sample">
+        <h2>17. 객체 : 데이터 불러오기 : hasOwnProperty()<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample18" class="sample">
+        <h2>18. 객체 : 데이터 불러오기 : 펼침 연산자 - 복사<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample19" class="sample">
+        <h2>19. 객체 : 데이터 불러오기 : 펼침 연산자 - 추가<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample20" class="sample">
+        <h2>20. 객체 : 데이터 불러오기 : 펼침 연산자 - 결합<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample21" class="sample">
+        <h2>21. 객체 : 데이터 불러오기 : 비구조화 할당<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+    <hr>
+
+    <div id="sample22" class="sample">
+        <h2>22. 객체 : 데이터 불러오기 : 비구조화 할당 : 별도 이름 저장<span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">
+</code></pre>
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+    <hr>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
     <script>
-        //sample1
+        // sample1
+        // 01. 변수 : 데이터 저장
+        {
+            let x = 100,  y = 200, z = "javascript";
 
+            document.write("*** 01. 변수 : 데이터 불러오기 ***<br>");
+            document.write(x, "<br>");
+            document.write(y, "<br>");
+            document.write(z, "<br><br>");
+        }
+                
     </script>
 </body>
 
